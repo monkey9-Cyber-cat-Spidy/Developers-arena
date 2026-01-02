@@ -36,6 +36,8 @@ week2-task-manager/
 ```
 
 ---
+## Live Link
+[Click here](https://developers-arena-6hxk.vercel.app/)
 
 ## Running The Site
 
