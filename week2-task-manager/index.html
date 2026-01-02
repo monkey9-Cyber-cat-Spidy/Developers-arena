@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 2 - Interactive Task Manager</title>
+
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-theme="light">
+    <div class="app-shell">
+        <header class="app-header">
+            <div class="title-group">
+                <h1>Interactive Task Manager</h1>
+                <p class="subtitle">Week 2: JavaScript Fundamentals</p>
+            </div>
+            <button id="themeToggle" class="btn btn-ghost" type="button" aria-label="Toggle dark/light mode">
+                🌙 Dark mode
+            </button>
+        </header>
+
+        <main class="app-main">
+            <section class="card card-form" aria-label="Add new task">
+                <form id="taskForm" novalidate>
+                    <div class="form-row">
+                        <label class="label" for="taskInput">Task</label>
+                        <input id="taskInput" name="task" type="text" class="input" placeholder="What do you need to do?" required minlength="1" />
+                    </div>
+
+                    <div class="form-row form-row-inline">
+                        <div class="field-group">
+                            <label class="label" for="prioritySelect">Priority</label>
+                            <select id="prioritySelect" name="priority" class="input">
+                                <option value="low">Low</option>
+                                <option value="medium" selected>Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                        </div>
+                        <div class="field-group">
+                            <label class="label" for="dueDateInput">Due date</label>
+                            <input id="dueDateInput" name="dueDate" type="date" class="input" />
+                        </div>
+                    </div>
+
+                    <p id="formError" class="form-error" aria-live="polite"></p>
+
+                    <button type="submit" class="btn btn-primary full-width">Add task</button>
+                </form>
+            </section>
+
+            <section class="card card-controls" aria-label="Task controls">
+                <div class="controls-row">
+                    <div class="search-group">
+                        <input id="searchInput" type="search" class="input" placeholder="Search tasks..." />
+                    </div>
+
+                    <div class="filters" role="radiogroup" aria-label="Filter tasks">
+                        <button type="button" class="chip chip-active" data-filter="all" id="filterAll">All</button>
+                        <button type="button" class="chip" data-filter="active" id="filterActive">Active</button>
+                        <button type="button" class="chip" data-filter="completed" id="filterCompleted">Completed</button>
+                    </div>
+                </div>
+
+                <div class="controls-row controls-row-bottom">
+                    <div class="stats" aria-label="Task statistics">
+                        <span>Total: <strong id="totalTasks">0</strong></span>
+                        <span>Active: <strong id="activeTasks">0</strong></span>
+                        <span>Completed: <strong id="completedTasks">0</strong></span>
+                    </div>
+
+                    <div class="actions">
+                        <button id="clearCompletedBtn" class="btn btn-ghost" type="button">Clear completed</button>
+                        <button id="backupBtn" class="btn btn-ghost" type="button">Copy backup JSON</button>
+                        <button id="restoreBtn" class="btn btn-ghost" type="button">Restore from JSON</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card card-list" aria-label="Task list">
+                <ul id="taskList" class="task-list" aria-live="polite"></ul>
+                <p id="emptyState" class="empty-state">No tasks yet. Add your first task above!</p>
+                <p class="hint">
+                    Tips: double-click a task to edit, drag to reorder, press <kbd>Ctrl</kbd>+<kbd>/</kbd> to focus the input.
+                </p>
+            </section>
+        </main>
+
+        <footer class="app-footer">
+            <small>Built with vanilla JavaScript • Week 2 Project</small>
+        </footer>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

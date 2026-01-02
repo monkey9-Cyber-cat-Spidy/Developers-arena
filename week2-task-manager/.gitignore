@@ -1,0 +1,12 @@
+# Node / tooling
+node_modules/
+.env
+.DS_Store
+*.log
+
+# Build output
+/dist
+/build
+
+# VSCode
+.vscode/
