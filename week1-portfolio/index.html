@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Kuncham Venkata Satya Manikanta – Passionate Full-Stack Developer" />
+  <title>Portfolio | Kuncham Venkata Satya Manikanta</title>
+  <link rel="icon" type="image/svg+xml" href="images/icons/favicon.svg" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#hero" class="nav__logo">Manikanta</a>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="nav__bar"></span>
+        <span class="nav__bar"></span>
+        <span class="nav__bar"></span>
+      </button>
+      <ul class="nav__list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="hero" class="hero" aria-label="Introduction">
+      <div class="hero__content">
+        <p class="hero__tag">Hello, I'm</p>
+        <h1 class="hero__title">Kuncham Venkata Satya Manikanta</h1>
+        <p class="hero__subtitle">Passionate Full-Stack Developer</p>
+        <a href="#projects" class="btn btn--primary">View Projects</a>
+        <a href="#contact" class="btn btn--outline">Contact Me</a>
+      </div>
+      <figure class="hero__image-wrapper">
+        <img src="images/profile.jpg" alt="Portrait of Kuncham Venkata Satya Manikanta" class="hero__image" />
+      </figure>
+    </section>
+
+    <section id="about" class="section section--light">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I’m a passionate full-stack developer who transforms ideas into efficient,
+          scalable, and user-friendly digital experiences. My expertise spans from
+          Python and React to secure backend systems and UI/UX design. I love solving
+          real-world problems, experimenting with new tech stacks, and continuously
+          learning to merge creativity with logic.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul class="skills__list" aria-label="Technical skills">
+          <li class="skills__item">Python</li>
+          <li class="skills__item">JavaScript / TypeScript</li>
+          <li class="skills__item">HTML5 / CSS3</li>
+          <li class="skills__item">React, Next.js, Redux Toolkit</li>
+          <li class="skills__item">TailwindCSS, UI/UX Design, Figma</li>
+          <li class="skills__item">Node.js, Express.js</li>
+          <li class="skills__item">MongoDB, Supabase, Firebase, MySQL</li>
+          <li class="skills__item">Android (Kotlin / Java, SQLite)</li>
+          <li class="skills__item">Git, Linux, DevOps & Security Basics</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section section--light">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects__grid">
+          <article class="project-card">
+            <div class="project-card__body">
+              <h3 class="project-card__title">Resume Builder V5</h3>
+              <p class="project-card__description">
+                Full-stack AI-powered resume builder with dark mode, print-ready exports,
+                Supabase authentication, and secure data handling. Optimized UI rendering and
+                state management using Redux Toolkit, improving load speed by ~30%.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">React</span>
+                <span class="tag">TailwindCSS</span>
+                <span class="tag">Redux Toolkit</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Express.js</span>
+                <span class="tag">Supabase</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__body">
+              <h3 class="project-card__title">Chat Rooms</h3>
+              <p class="project-card__description">
+                Real-time global and private chat system using Supabase Realtime WebSockets,
+                with session-based authentication, unique room IDs, and responsive UI built
+                with Next.js and TailwindCSS.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">Next.js</span>
+                <span class="tag">React</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">TailwindCSS</span>
+                <span class="tag">Supabase Realtime</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__body">
+              <h3 class="project-card__title">Android Apps Collection</h3>
+              <p class="project-card__description">
+                Collection of Android applications featuring authentication, CRUD operations,
+                and modern UI/UX. Implemented SHA-256 encryption and keystore signing for
+                enterprise-level security.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">Android</span>
+                <span class="tag">Material Design</span>
+                <span class="tag">SQLite</span>
+                <span class="tag">Gradle</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Based in Vizianagaram, Andhra Pradesh. Feel free to reach out for internships,
+          freelance projects, or collaboration opportunities.</p>
+        <form class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required aria-required="true" />
+            <span class="form-error" aria-live="polite"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required aria-required="true" />
+            <span class="form-error" aria-live="polite"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required aria-required="true"></textarea>
+            <span class="form-error" aria-live="polite"></span>
+          </div>
+          <button type="submit" class="btn btn--primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Kuncham Venkata Satya Manikanta. All rights reserved.</p>
+      <ul class="social-links" aria-label="Social media links">
+        <li><a href="https://github.com/monkey9-Cyber-cat-Spidy" aria-label="GitHub profile" target="_blank" rel="noreferrer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/kvsmanikanta" aria-label="LinkedIn profile" target="_blank" rel="noreferrer">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/navigation.js"></script>
+</body>
+</html>
