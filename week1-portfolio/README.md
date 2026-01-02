@@ -3,6 +3,7 @@
 A responsive personal portfolio website for **Kuncham Venkata Satya Manikanta**, showcasing full‑stack skills, projects, and contact information. Built as part of **Week 1: HTML & CSS Foundations**.
 
 ## Live Sections
+- Live Link: https://developers-arena.vercel.app/
 - Hero: name, title, and call‑to‑action buttons
 - About: summary from resume
 - Skills: categorized tech stack (frontend, backend, tools, DevOps)
