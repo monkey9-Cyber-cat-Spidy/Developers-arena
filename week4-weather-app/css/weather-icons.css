@@ -1,0 +1,14 @@
+/* weather-icons.css */
+
+/* The main icon font is loaded from the CDN in index.html.
+   This file just adds coloring and minor tweaks. */
+
+.weather-condition i,
+.forecast-day i {
+    color: #f59e0b; /* warm sun-like color by default */
+}
+
+body.theme-night .weather-condition i,
+body.theme-night .forecast-day i {
+    color: #38bdf8; /* cooler blue at night */
+}
