@@ -4,7 +4,7 @@
 // Never expose real production keys this way.
 
 // Change this value to your actual Weatherstack API access key.
-const WEATHERSTACK_ACCESS_KEY = 'your_weatherstack_api_key_here';
+const WEATHERSTACK_ACCESS_KEY = '552e4b616ceb2a5172e4de263eab1a98';
 
 // Weatherstack base URL
 const WEATHERSTACK_BASE_URL = 'https://api.weatherstack.com';
